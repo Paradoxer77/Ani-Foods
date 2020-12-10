@@ -1,0 +1,23 @@
+{
+  "name": "ani-foods",
+  "version": "1.0.0",
+  "description": "This is a restaurant webiste dummy created using HTML, CSS, JavaScript, Node and Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paradoxer77/Ani-Foods.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paradoxer77/Ani-Foods/issues"
+  },
+  "homepage": "https://github.com/Paradoxer77/Ani-Foods#readme",
+  "devDependencies": {
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
