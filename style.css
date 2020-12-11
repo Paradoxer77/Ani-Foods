@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+
+header {
+  background-image: url(https://wallpapercave.com/wp/wp5304661.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Langar", cursive;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.header {
+  margin-right: 20px;
+}
+
+.img {
+  width: 30%;
+  min-width: 200px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: stretch;
+  background-color: white;
+}
+
+.nav-element {
+  border: 3px solid purple;
+  border-top: none;
+  border-left: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 12px;
+  font-size: large;
+  transition: 600ms;
+}
+
+.nav-element:hover {
+  cursor: pointer;
+  background-color: rgba(230, 6, 230, 0.529);
+}
+
+.left-element {
+  border-left: 3px solid purple;
+}
