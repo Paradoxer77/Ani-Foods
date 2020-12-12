@@ -80,6 +80,10 @@ nav {
   justify-content: center;
 }
 
+.active {
+  background-color: rgba(230, 6, 230, 0.529);
+}
+
 .staff {
   height: 100px;
   width: 100px;
