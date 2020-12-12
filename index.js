@@ -3,7 +3,7 @@
 import { header } from "/dist/header.js";
 import { homepage } from "/dist/main.js";
 import { foot } from "/dist/footer.js";
-
+import { contactspage } from "/dist/contact.js";
 //body elements
 
 header();
