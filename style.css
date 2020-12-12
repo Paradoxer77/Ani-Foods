@@ -62,7 +62,7 @@ nav {
   border-right: none;
 }
 
-.content {
+#content {
   margin-top: 20px;
   text-align: center;
   color: purple;
