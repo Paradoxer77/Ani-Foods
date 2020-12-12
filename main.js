@@ -1,4 +1,4 @@
-const content = document.getElementById("content");
+import { content } from "/dist/index.js";
 
 function appendToContent(element, clasList, text) {
   const newElement = document.createElement(element);
@@ -12,35 +12,37 @@ function appendToContent(element, clasList, text) {
   return newElement;
 }
 
-function addStaff(url) {
+function addStaff(url, container) {
   const newStaff = document.createElement("img");
   newStaff.src = url;
   newStaff.classList.add("staff");
 
-  staffContainer.appendChild(newStaff);
+  container.appendChild(newStaff);
 }
 
-export { appendToContent, addStaff };
+function homepage() {
+  appendToContent("h1", "", "About");
 
-appendToContent("h1", "", "About");
+  appendToContent(
+    "p",
+    "about",
+    "Ani Foods has the best food from all over the Anime World. Whether you are a simple person wanting some simple foods, a lavish person who likes to have a gourmet or a demon/titan/ghoul wanting to devour people, we have got you covered. We provide high quality food at an affordable cost and our staff are very hardworking and will help you whatever you want."
+  );
 
-appendToContent(
-  "p",
-  "about",
-  "Ani Foods has the best food from all over the Anime World. Whether you are a simple person wanting some simple foods, a lavish person who likes to have a gourmet or a demon/titan/ghoul wanting to devour people, we have got you covered. We provide high quality food at an affordable cost and our staff are very hardworking and will help you whatever you want."
-);
+  appendToContent("h2", "staff-head", "Our Main Staff");
 
-appendToContent("h2", "staff-head", "Our Main Staff");
+  const staffContainer = appendToContent("div", "images", "");
 
-const staffContainer = appendToContent("div", "images", "");
+  addStaff("./images/sanji.webp", staffContainer);
+  addStaff("./images/alice.jpg", staffContainer);
+  addStaff("./images/erina.jpg", staffContainer);
+  addStaff("./images/iida.png", staffContainer);
+  addStaff("./images/isabella.jpeg", staffContainer);
+  addStaff("./images/isshiki.png", staffContainer);
+  addStaff("./images/yoshimura.jpg", staffContainer);
+  addStaff("./images/rindou.jpg", staffContainer);
+  addStaff("./images/shun.jpg", staffContainer);
+  addStaff("./images/soma.jpg", staffContainer);
+}
 
-addStaff("./images/sanji.webp");
-addStaff("./images/alice.jpg");
-addStaff("./images/erina.jpg");
-addStaff("./images/iida.png");
-addStaff("./images/isabella.jpeg");
-addStaff("./images/isshiki.png");
-addStaff("./images/yoshimura.jpg");
-addStaff("./images/rindou.jpg");
-addStaff("./images/shun.jpg");
-addStaff("./images/soma.jpg");
+export { homepage };
