@@ -26,7 +26,7 @@ function homepage() {
   appendToContent(
     "p",
     "about",
-    "Ani Foods has the best food from all over the Anime World. Whether you are a simple person wanting some simple foods, a lavish person who likes to have a gourmet or a demon/titan/ghoul wanting to devour people, we have got you covered. We provide high quality food at an affordable cost and our staff are very hardworking and will help you whatever you want."
+    "Ani Foods has the best food from all over the Anime World. Whether you are a simple person wanting some simple foods, a lavish person who likes to have a gourmet or a demon/titan/ghoul wanting to devour people, we have got you covered. We provide high quality food at an affordable cost and our staff are very hardworking and will help you with whatever you want."
   );
 
   appendToContent("h2", "staff-head", "Our Main Staff");
